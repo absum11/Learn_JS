@@ -1,0 +1,21 @@
+<!-- call back functions are most often usd with asynchronous functions, 
+one such function in js is setInterval -->
+
+<!DOCTYPE html>
+<html>
+<body style="text-align: center">
+<h1>JS asynchronous functions demo</h1>
+<h2>setInterval() with a callback func</h2>
+<p>displays time after every 1 sec</p>
+<h2 id="time"></h2>
+
+<script>
+    setInterval(callBack,1000);
+
+    function callBack(){
+        let date = new Date();
+        document.getElementById("time").innerHTML=date.getHours()+":"+date.getMinutes()+":"+date.getSeconds()   ;
+    }
+</script>
+</body>    
+</html>
