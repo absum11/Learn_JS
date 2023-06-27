@@ -21,6 +21,7 @@ greet('Abhinav','Pathak');
 a variable to which it is assigned*/
 
 //a self executing anonymous functions
+//also called IIFE(Immediately Invoked function expression)
 (function(){
  console.log('Hey i am self-executing anonyosus func');
 })();
